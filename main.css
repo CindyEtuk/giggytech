@@ -47,7 +47,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 20));}
 /* section-one */
 .section-one{ color: white; text-transform: capitalize; 
     padding-top:50px;
-  height: 600px; width: 100%; padding-bottom: 20px;
+   width: 100%; padding-bottom: 20px;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+17,1809bf+98&1+12,0.7+68 */
 background: -moz-linear-gradient(-45deg,  rgba(30,87,153,1) 12%, rgba(30,87,153,0.97) 17%, rgba(26,38,177,0.7) 68%, rgba(24,9,191,0.7) 98%); /* FF3.6-15 */
 background: -webkit-linear-gradient(-45deg,  rgba(30,87,153,1) 12%,rgba(30,87,153,0.97) 17%,rgba(26,38,177,0.7) 68%,rgba(24,9,191,0.7) 98%); /* Chrome10-25,Safari5.1-6 */
@@ -61,7 +61,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 /* section-two */
 
 .section-two{ padding: 50px; 
-     height: 500px; width: 100%;
+      width: 100%;
     text-align: center;}
 .section-two h6{font-weight: bolder; text-transform: capitalize;
 padding-top: 20px; }
@@ -72,7 +72,7 @@ padding-top: 20px; }
 .section-three{color:white; padding: 40px; 
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-transform: capitalize;}
-    .col-sm-8 img{width: 500px; height: 500px; margin-left: 0px;
+    .col-sm-8 img{width: 500px;  margin-left: 0px;
 
     }
     .col-sm-8{padding-left: 310px; text-align: center;}
@@ -87,12 +87,12 @@ padding-top: 20px; }
 }
 .square1, .square2, .square3{
     width: 100%;
-    height: 400px;
+    height: 350px;
     border: 1px solid black;
 }
 .square3{
     width: 100%;
-    height: 800px;
+    height: 700px;
     border:  1px solid black;
 
 
@@ -246,8 +246,9 @@ padding-top: 20px; }
 } */
 
 @media screen and (max-width: 800px) {
-    /* .container{margin-left: 0px;}
-    .row{margin-left: 0px;} */
+    .banner-container h1{
+        font-size: 16px; 
+    }
     .sidebar {
         display: contents;
       width: 100%;
@@ -256,7 +257,15 @@ padding-top: 20px; }
     }
     .sidebar a {float: left;}
     div.content {margin-left: 0;}
+
+      .section-two{display: block;}
+  .section-three{display: block;}
+  .square-container{
+    display: block;
+    
+}
   }
+
   
   /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
   @media screen and (max-width: 400px) {
