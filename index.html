@@ -5,59 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/skippr.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&family=Shrikhand&family=Tangerine&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrapmincss"rel="stylesheet"integrity="sha384-EVSTQN3azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/skippr.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
+    <!-- navigation-start -->
     
-  <!-- <div class="sidebar">
+  <div class="navigation">
+    <div class="nothing"></div>
     
-    <a href="#news" class="logo"><img src="img/WhatsApp Image 2022-04-30 at 7.28.14 PM (1).jpeg" class="img-circle" alt="Cinque Terre"></a>
-  </a>
-    <a class="active" href="#home">Home</a>
-    <a href="#news">News</a>
-    <a href="#news">clients</a>
-    <a href="#news">team</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-    
-</div> -->
-
-         <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                    <img src="img/WhatsApp Image 2022-04-30 at 7.28.14 PM.jpeg" class="img-circle" alt="Cinque Terre"></a>
-              </div>
-             
-              <div class="nav-two" id="myTopnav">
-                <li> <a href="" ><span>welcome</span> </a></li>
-                <li> <a href="" > about</a></li>
-                <li> <a href="" > clients</a></li>
-                <li> <a href="" > news</a></li>
-                <li> <a href="" > team</a></li>
-                <li> <a href="" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                  </svg></a></li>
-                <li> <a href="" > <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                  </svg></a></li>
-                  <li><a href=""> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                  </svg></a></li>
-                  <a class="nav-btn" href="" ><button type="button" 
-                    class="btn btn-primary">Call Now</button></a>
-                 
-                  
-
-    
-                </div>
-
-            
+    <div class="logo1">
+      <a href="index.html" >
+        <img src="img/l2.png" >
+          </a>
+    </div> 
+      <div class="nav-section1">
+  
+      <ul>
          
-      </div> 
+          <li> <a href="index.html"> Home </a></li>
+          <li> <a href="distress-sale.html">services</a></li> 
+          <li> <a href="about.html">portfolio</a></li>
+          <li> <a href="register.html">blog</a></li>
+          <li> <a href="" >contact</a></li>
+
+      </ul>
+      
+  </div>
+
+  <div class="box">
+    
+    <input type="text" placeholder="Search here"  name=""  >
+    <svg width="16" height="16" class="_35lll _3FpBp _24pSQ" 
+    viewBox="0 0 32 32" version="1.1" aria-hidden="false">
+    <path d="M22 20c1.2-1.6 2-3.7 2-6 0-5.5-4.5-10-10-10S4 8.5 4 14s4.5
+     10 10 10c2.3 0 4.3-.7 6-2l6.1 6 1.9-2-6-6zm-8 1.3c-4 0-7.3-3.3-7.3-7.3S10 6.7 14 6.7s7.3 3.3 7.3 7.3-3.3 7.3-7.3 7.3z">
+    </path></svg>
+    
+</div>
+   </div>
+   <br>
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="index.html" class="active"><h6><span class="logo2">instant property </span>
+    <h1>africa </h1></h6> </a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="index.html" class="top-lks">home</a>
+    <a href="listing.html">listing</a>
+    <a href="distress-sale.html">deals</a>
+    <a href="about.html">about</a>
+    <a href="register.html">contact</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+  
+
+ 
       <!-- banner -->
       
      <div class="banner-container">
@@ -65,21 +78,193 @@
         <div class="banner-content" >
             <!-- <h6>welcome to GIGGYTECH
                  </h6> -->
-            <h1>We help to resolve <br>
-              clients marketing challenges &
-                 <br>grow their businesses using creative design
-                  thinking!</h1>
-                  <a href="about.html">
-                    <button>EXPLORE</button>
+            <h1>realize your full <br> potential</h1>
+            <p>We help to resolve clients marketing challenges & grow their
+              <br> businesses using creative design
+                  thinking!</p>
+                  <a href="about.html" class="btn">
+                    <button>start now</button>
                   </a>  
         </div>
        </div>
         
      </div>
 
-     <!-- section-one -->
-     <div class="section-one">
 
+     <!-- section-one -->
+     <div class="sec1-container">
+      <div class="sec1-grid">
+        <div class="sec1">
+          <div class="one">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" color="rgb(74, 79, 171, 0.9)" height="26" fill="currentColor" class="bi bi-bank2" viewBox="0 0 16 16">
+              <path d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916l-7.5-5zM12.375 6v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1H.5z"/>
+            </svg>
+            <h3>Coperate Business</h3>
+            <p>join our team in expanding your coperate brand</p>
+          </div>
+        </div>
+
+        <div class="sec1">
+          <div class="one">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" color="rgb(74, 79, 171, 0.9)" height="26" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
+              <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/>
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
+            </svg>
+            <h3>Personal Business</h3>
+            <p>join our team in expanding your coperate brand</p>
+          </div>
+        </div>
+
+      <div class="sec1-plain" >
+          <div class="one">
+            <h1>get a Solution
+              to your businesses
+            </h1>
+            <p>our consultant help address your most
+              challenging issues by providing
+              strategic digital marketing services</p>
+ 
+          </div>
+        </div>
+
+        <div class="sec1-blue" >
+          <div class="one">
+            <h3>Start-Ups</h3>
+            <p>join our team in expanding your coperate brand</p>
+            <a href="about.html" class="btn-1">
+              <button>Learn More
+                <svg xmlns="http://www.w3.org/2000/svg"  width="36"  height="36" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="sec1">
+          <div class="one">
+            <svg xmlns="http://www.w3.org/2000/svg" color="rgb(74, 79, 171, 0.9)" width="26" height="26" fill="currentColor" class="bi bi-house-heart-fill" viewBox="0 0 16 16">
+              <path d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.707L8 2.207 1.354 8.853a.5.5 0 1 1-.708-.707L7.293 1.5Z"/>
+              <path d="m14 9.293-6-6-6 6V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9.293Zm-6-.811c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.691 0-5.018Z"/>
+            </svg>
+            <h3>Religious Organisation</h3>
+            <p>join our team in expanding your coperate brand</p>
+          </div>
+        </div>
+         
+        <div class="">
+          
+          <a href="about.html" class="btn">
+            <button>All Services</button>
+          </a>
+        </div>
+        
+
+      </div>
+     </div>
+
+
+     <!-- section-two -->
+     <div class="section-two">
+      <div class="sec2-container">
+        <div class="sec2-content" >
+            <h1>meeting the growth challenges<br> of businesses</h1>
+            <p>We help to resolve clients marketing challenges & grow their
+              <br> businesses using creative design
+                  thinking!</p>
+                  <a href="about.html" class="btn">
+                    <button>start now</button>
+                  </a>  
+        </div>
+      
+
+      <div class="sec2-grid">
+
+        <div class="sec2">
+          <h1> from<br> ideals</h1>
+          <p> ideas are a way to express one inner most self, 
+            we transform your ideas into a reality </p>
+        </div>
+
+        <div class="sec2">
+          <h1>creative thinking</h1>
+          <p>our team build up a very unique and creative thinking process
+          to come with effective ideas  </p>
+        </div>
+
+        <div class="sec2">
+          <h1>precise execution</h1>
+          <p>all our projects are executed with the right tools to
+            ensure customers satisfaction </p>
+        </div>
+
+      </div>
+     </div>
+     </div>
+     
+
+     <!-- section-three -->
+     <div class="section3-container">
+      <div class="sec3-grid">
+        <div class="sec3">
+          <h1>digital Solutions for marketing businesses </h1>
+          <p>we provide more reach, followers, post engagement 
+            and much more leading to more sales and customer satisfaction 
+            and rentention.</p>
+
+            <a href="about.html" class="btn">
+              <button>start now</button>
+            </a> 
+            
+            <a href="about.html" class="btn">
+              <button>Learn More
+                <svg xmlns="http://www.w3.org/2000/svg"  width="36"  height="36" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg>
+              </button>
+          
+        </div>
+
+        <div class="sec3">
+          <img src="img/t5.jpg">
+        </div>
+      </div>
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     <!-- <div class="section-three">
         <div class="container-one">
             <div class="jumbotron">
                 
@@ -110,10 +295,10 @@
             
           </div>
 
-     </div>
+     </div> --> 
 
      <!-- section-two -->
-     <div class="section-two">
+     <!-- <div class="section-two">
         <div class="row">
             <div class="col-sm-3">
                 <svg xmlns="http://www.w3.org/2000/svg" color="red" width="56" height="56" fill="currentColor" class="bi bi-megaphone" viewBox="0 0 16 16">
@@ -154,110 +339,11 @@
                      have quick access products.  </p>
             </div>
           </div>
-     </div>
-
-
-
-<!-- section-four -->
-      <!--open sesame-->
-      <div class="square-container">
-        <div class="square1">
-            <div class="squareBottomLeft">
-                <div class="squareTopLeft">
-                    <div class="box">
-                        <img src="img/cindysglam-logo.jpg" alt="" style="height: 450px;">
-                        <p>CINDY'S GLAM COLLECTION</p>
-                    </div>
-
-                </div>
-
-            </div>
-            <div class="squareBottomLeft">
-                <div class="squareTopLeft">
-                    <div class="box">
-                        <img src="img/toucher logo.jpg" alt=""  style="height: 450px;">
-                        <p> TOUPHER</p>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="square3">
-            <div class="squareBottomcenter">
-                <div class="squareTopcenter">
-                    <div class="box">
-                        <p class="boxp">OUR LATEST</p>
-                        <h1 class="boxh1">CLIENTS</h1>
-                        <p class="boxp1">EXPLORE THE STORE <br>&#8594;</p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <div class="square2">
-            <div class="squareBottomRight">
-                <div class="squareTopRight">
-                    <div class="box">
-                      <img src="img/Simple House Illustration Property Logo (3).png" alt=""  style="height: 400px;">
-                      
-                        <p>INSTANT PROPERTY AFRICA</p>
-                    </div>
-
-                </div>
-
-            </div>
-            <div class="squareBottomRight">
-                <div class="squareTopRight">
-                    <div class="box">
-                      <img src="img/ottimo_logo.jpg" alt=""  style="height: 400px;">
-                      
-                        <p>OTTIMO GROUPS</p>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-         <!-- section-three -->
-
-         <div class="section-three"  style="background-image:
-         url(img/3.jpg);
-           width: 100%; background-size: cover;  background-position: bottom;">
-          <div class="row">
-            <div class="col-sm-4">
-              <img src="img/13.jpg" class="img-circle" alt="Cinque Terre">
-              <h3>thinking about starting ?</h3>
-              <img src="img/15.jpg" class="img-circle" alt="Cinque Terre">
-              <h3> with No visibility ?</h3>
-            </div>
-            <!-- <div class="col-sm-2">
-              <h1>think giggytech</h1>
-            </div> -->
-           
-            <div class="col-sm-8">
-              <h1>think giggytech </h1>
-                <!-- <img src="img/10.jpg" class="img-circle" alt="Cinque Terre">  -->
-                <h3> limitless reach !</h3>
-              </div>
-    
-          </div>
-    
-         </div>
+     </div> -->
 
     <!-- section-five -->
    
-    <div class="section-five">
+    <!-- <div class="section-five">
       <h1>NEWS & ENTERTAINMENT</h1>
 
 
@@ -304,35 +390,8 @@
   
     </div>
 
-    </div>
+    </div> -->
 
-    
-      <div class="containerSlider">
-        <div id="theTarget">
-            <div class="skippr" style="background-image:
-             url(img/news1\ \(1\).jpg); background-position: bottom; "> 
-                  <h1 class="apartment" style="text-align: center;">
-                     industry news</h1>
-                 </div>
-            <div class="skippr" style="background-image:
-             url(img/news1\ \(2\).jpg) "> 
-             <h1 class="apartment" style="text-align: center;" >
-              new trends </h1>
-             </div>
-            <div class="skippr" style="background-image:
-             url(img/t5.jpg); ">
-              <h1 class="apartment" style="text-align: center;">
-                hot topics</h1>
-            </div>
-            <div class="skippr"  style="background-image:
-             url(img/t6.jpg) ">
-             <h1 class="apartment" style="text-align: center;">
-               digitalized connections </h1>
-            </div>
-            
-            
-        </div>    
-            </div>
     
     
 
