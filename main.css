@@ -108,12 +108,12 @@ width: 100%;color: black;
 }
 
 .sec1-grid{display: grid; background-color: whitesmoke;  
-grid-template-columns: repeat(3,1fr);
+grid-template-columns: repeat(3,1fr); flex-wrap: wrap;
 gap: 20px; padding:100px 150px;
 }
 .sec1 svg{margin: 0px 20px ;}
 .sec1{background-color: white; padding: 20px;
-  box-shadow: 5px 10px gray;
+  box-shadow: 5px 10px gray;flex-wrap: wrap;
   height: 200px; width: 300px; border-radius: 20px;}
 .sec1-blue{ background-color: rgb(74, 79, 171, 0.9); padding: 20px;
   box-shadow: 5px 10px #888888; color:white ;
@@ -141,7 +141,7 @@ padding: 0px 20px;}
 
 /* section-two */
 .sec2-container{
-  background-image: url(img/pic-2.jpg);
+  background-image: url(img/pic-2.jpg); flex-wrap: wrap;
    width: 100%; background-position: center;
   background-size: cover; background-repeat: no-repeat;
   height:100%;
@@ -161,7 +161,7 @@ padding: 0px 20px;}
 }
 
 .sec2-grid{ text-align: center;
-  display: grid;  
+  display: grid;  flex-wrap: wrap;
 grid-template-columns: repeat(3,1fr);
 gap: 20px; padding:40px 150px;
 }
@@ -178,13 +178,13 @@ gap: 20px; padding:40px 150px;
  
  
 /* section-3 */
-.section3-container{ text-transform: capitalize; 
+.section3-container{ text-transform: capitalize; flex-wrap: wrap;
   height: fit-content; font-weight: 700; color:rgb(74, 79, 171, 0.9) ;
     width: 100%; padding:100px 10px;  background-color: wheat;
  }
 
 .sec3-grid{
-width: 100%;
+width: 100%; flex-wrap: wrap;
   display: grid;  
 grid-template-columns: repeat(2,1fr);
 gap:50px; padding:40px 150px; line-height: 46px;
@@ -205,18 +205,18 @@ background-color: transparent; color:rgb(74, 79, 171, 0.9) ;}
   color: white; background-color:rgb(74, 79, 171, 0.9) ;}
 
   /* section-4 */
-  .sec4{text-align: center; align-items: center; color:rgb(74, 79, 171, 0.9) ;
+  .sec4{text-align: center; align-items: center; color:rgb(74, 79, 171, 0.9) ; flex-wrap: wrap;
     background-color: wheat;margin: 40px; padding: 80px 150px;}
   .sec4 img{height: 100px; width: 100px; border-radius: 50%;}
   .sec4 p{color: gray; padding: 10px 100px; font-size: 18px;}
 
 /* section-5 */
 .sec5-container{ text-transform: capitalize; 
-   color:gray;
+   color:gray; flex-wrap: wrap;
     width: 100%; 
     padding:100px 10px;  background-color: wheat;
  }
-.sec5-grid{display: grid; gap: 40px;
+.sec5-grid{display: grid; gap: 40px; flex-wrap: wrap;
  padding: 100px;  grid-template-columns: repeat(4,1fr);}
 .sec5 h1{font-size: 18px; color:rgb(74, 79, 171, 0.9) ;
 padding: 30px 5px;}
@@ -224,21 +224,21 @@ padding: 30px 5px;}
 .sec5 p{line-height: 30px;}
 
 /* section-6 */
-.sec6{display: flex; background-color: wheat; margin: 40px; height: 100px;
+.sec6{display: flex; background-color: wheat; margin: 40px; height: 100px;flex-wrap: wrap;
   padding:30px 80px; justify-content: space-between;}
   .sec6 span{color: red;}
   .sec6 h1{color:rgb(74, 79, 171, 0.9) ; font-size: 20px;
   }
 
   /* section-7 */
-.section7-container{ text-transform: capitalize;  margin: 50px 0px;
+.section7-container{ text-transform: capitalize;  margin: 50px 0px; flex-wrap: wrap;
   height: fit-content; font-weight: 700; color:rgb(74, 79, 171, 0.9) ;
     width: 100%; padding:20px;  background-color: wheat;
  }
 
 .sec7-grid{
 width: 100%;
-display: grid;  
+display: grid;  flex-wrap: wrap;
 grid-template-columns: repeat(2,1fr);
 gap:50px; padding: 10px; line-height: 46px;
 }
@@ -251,17 +251,17 @@ padding: 10px;}
 
 
   /* section-8 */
-.sec8{display: flex; background-color: rgb(74, 79, 171, 0.9); margin:50px 200px; height: 70px;
+.sec8{display: flex; flex-wrap: wrap; background-color: rgb(74, 79, 171, 0.9); margin:50px 200px; height: 70px;
   padding:20px 80px; justify-content: space-between; border-radius: 20px;}
   .sec8 h1{color:whitesmoke ; font-size: 20px; 
   }
 
 /* section-9 */
 .sec9-container{ text-transform: capitalize; 
-  color:gray; 
+  color:gray; flex-wrap: wrap;
      background-color: wheat;
 }
-.sec9-grid{display: grid; gap: 60px; margin:50px 200px;
+.sec9-grid{display: grid; gap: 60px; margin:50px 200px; flex-wrap: wrap;
 padding: 50px 0px;  grid-template-columns: repeat(4,1fr);}
 .sec9 h1{font-size: 18px; color:rgb(74, 79, 171, 0.9) ;
 padding: 10px 5px;}
@@ -278,33 +278,3 @@ padding: 10px 5px;}
 
 
 
-
-@media screen and (max-width: 800px) {
-    .banner-container h1{
-        font-size: 16px; 
-    }
-    .sidebar {
-        display: contents;
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
-
-      .section-two{display: block;}
-  .section-three{display: block;}
-  .square-container{
-    display: block;
-    
-}
-  }
-
-  
-  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-  @media screen and (max-width: 400px) {
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
-  }
