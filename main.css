@@ -28,16 +28,11 @@ width: 100%;color: black;
 .nav-section1 ul li{
   list-style: none; margin: 0px 10px;  
 }
-.nav-section1 ul li a{font-family: 'Open Sans', sans-serif;
-  text-decoration: none; font-weight: 600;
-  text-transform: capitalize; padding: 3px;
-  font-size: .9175rem;font-size: 16px;
-  line-height: 1.7; color:gray;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  position: relative; right: 0;overflow-x: hidden;
-  transition: right .5s cubic-bezier(.25, .46, .45, .94);}
+.nav-section1 ul li a{ line-height: 1.5;
+  text-shadow: 5px 4px 11px rgb(0 0 0 / 6%);
+   font-size: 16px;
+  color: #464545; font-family: 'Poiret One', cursive;
+  letter-spacing: 2px;}
 
 .nav-section1 li a:hover{ color:gray;}
 
@@ -50,7 +45,7 @@ width: 100%;color: black;
   border: 1px solid whitesmoke;
   border-radius: 30px;
   display: flex;
-  align-items: center;
+  align-items: center; 
   padding:10px;margin: 0px 20px; 
 } 
 .box >  i {
@@ -58,7 +53,7 @@ width: 100%;color: black;
   color: gray;
 }
 .box > input{
-  flex: 1;
+  flex: 1; font-family: 'Poiret One', cursive;
   height: 20px;
   border: none;
   outline: none;
@@ -81,11 +76,14 @@ width: 100%;color: black;
           
 }
 
-.banner-content h1{ font-family: 'Open Sans', sans-serif;
-    font-size: 36px; padding: 15px;    text-transform: capitalize;
+.banner-content h1{  line-height: 1.2;
+  text-shadow: 5px 4px 11px rgb(0 0 0 / 26%);
+  letter-spacing: 1px;
+  color: white; font-family: 'Poiret One', cursive;
+  letter-spacing: 2px;font-size: 45px; padding: 15px;    text-transform: capitalize;
 }
-.banner-content p{font-size: 18px;font-weight: 400;
-   padding:5px 15px; font-family: 'Poppins', sans-serif;
+.banner-content h6{font-size: 18px;
+   padding:5px 15px; line-height: 1.2;
 }
 .banner .banner-content{
     background: rgb(74, 79, 171, 0.4); 
@@ -103,18 +101,19 @@ width: 100%;color: black;
 /* section-one */
 
 .sec1-containere{ text-transform: capitalize; 
- height: fit-content; font-weight: 700;
+ height: fit-content; font-weight: 700; 
    width: 100%; padding: 0px; 
 }
 
 .sec1-grid{display: grid; background-color: whitesmoke;  
 grid-template-columns: repeat(3,1fr); flex-wrap: wrap;
-gap: 20px; padding:100px 150px;
+gap: 20px; padding:100px 150px; font-family: 'Poiret One', cursive;
 }
 .sec1 svg{margin: 0px 20px ;}
 .sec1{background-color: white; padding: 20px;
-  box-shadow: 5px 10px gray;flex-wrap: wrap;
+  box-shadow: 5px 10px gray;flex-wrap: wrap; font-family: 'Poiret One', cursive;
   height: 200px; width: 300px; border-radius: 20px;}
+
 .sec1-blue{ background-color: rgb(74, 79, 171, 0.9); padding: 20px;
   box-shadow: 5px 10px #888888; color:white ;
   height: 200px; width: 300px; border-radius: 20px;
@@ -131,11 +130,11 @@ padding: 0px 20px;}
 .sec1-blue p{  padding:5px 20px; text-transform: capitalize;}
 
 .sec1-plain h1{ padding: 20px; color: rgb(74, 79, 171, 0.9);}
-.sec1-plain p{ color: gray;  padding:5px 20px; text-transform: capitalize;}
+.sec1-plain p{ color: #464545;  padding:5px 20px; text-transform: capitalize;}
 
 
   .sec1 h3{color: rgb(74, 79, 171, 0.9); padding: 20px;}
-  .sec1 p{color: gray;  padding:5px 20px; text-transform: capitalize;}
+  .sec1 p{color: #464545;  padding:5px 20px; text-transform: capitalize;}
 
   .sec1-plain{text-transform: capitalize;}
 
@@ -147,11 +146,11 @@ padding: 0px 20px;}
   height:100%;
 }
 
-.sec2-content h1{ font-family: 'Open Sans', sans-serif;
+.sec2-content h1{ font-family: 'Poiret One', cursive;
   font-size: 26px; padding: 15px;    text-transform: capitalize;
 }
 .sec2-content p{font-size: 18px;font-weight: 400;
- padding:5px 15px; font-family: 'Poppins', sans-serif;
+ padding:5px 15px; font-family: 'Poiret One', cursive;
 }
 .sec2-container .sec2-content{
   background: rgb(74, 79, 171, 0.4); 
@@ -160,7 +159,7 @@ padding: 0px 20px;}
   padding: 50px; text-align: start;
 }
 
-.sec2-grid{ text-align: center;
+.sec2-grid{ text-align: center; 
   display: grid;  flex-wrap: wrap;
 grid-template-columns: repeat(3,1fr);
 gap: 20px; padding:40px 150px;
@@ -178,43 +177,53 @@ gap: 20px; padding:40px 150px;
  
  
 /* section-3 */
-.section3-container{ text-transform: capitalize; flex-wrap: wrap;
-  height: fit-content; font-weight: 700; color:white ;
-    width: 100%; padding:100px 10px;  background: rgb(74, 79, 171, 0.4); 
+.section3-container{ text-transform: capitalize; flex-wrap: wrap; margin: 0px !important;
+ font-weight: 700; color:white ; background-repeat: no-repeat;
+  object-fit: cover;
+    width: 100%; padding:20px 10px; background-image: url(img/lo-homepage-background.png);
  }
 
 .sec3-grid{
 width: 100%; flex-wrap: wrap;
   display: grid;  
 grid-template-columns: repeat(2,1fr);
-gap:50px; padding:40px 150px; line-height: 46px;
+gap:40px; padding:60px; line-height: 46px;
 
 }
-.sec3 img{width: 100%; border-radius: 200px 100px 30px 200px;
-  background-color: #888888; object-fit: cover;
-height: 400px;}
+
+.sec3 h1{
+  line-height: 1.5;
+  text-shadow: 5px 4px 11px rgb(0 0 0 / 26%);
+  letter-spacing: 1px;
+  color: white; font-family: 'Poiret One', cursive;
+  letter-spacing: 2px;
+}
+.sec3 img{width: 100%; border-radius: 200px 100px 30px 200px; height: 500px; padding: 4px;
+  background-color: orange; object-fit: cover;
+}
 /* (first value applies to top-left corner,
  second value applies to top-right corner, 
  third value applies to bottom-right corner,
  and fourth value applies to bottom-left corner) */
-.sec3 p{color: black; font-weight: 900; font-size: 16px;
+.sec3 p{color: rgb(242, 234, 234); font-weight: 900; font-size: 18px; font-family: 'Poiret One', cursive;
 padding: 2px;}
 .btn-2 button{padding: 20px 20px; border: none; 
-background-color: transparent; color:rgb(74, 79, 171, 0.9) ;}
+background-color: transparent; color:white ;}
 .btn-2 button:hover{padding: 20px 20px; border: none; border-radius: 20px;
-  color: white; background-color:rgb(74, 79, 171, 0.9) ;}
+ color:orange;}
+ .sec3 h1{padding-top: 20px;}
 
   /* section-4 */
 .sec4-grid{
    flex-wrap: wrap;
   display: grid;   
 grid-template-columns: repeat(3,1fr); margin: 0px;
-gap:40px; padding:60px; line-height: 28px; background: rgb(74, 79, 171, 0.5);
+gap:40px; padding:60px; line-height: 28px;
 }
   
-.sec4-t{ text-align: center; align-items: center; background-color:rgb(74, 79, 171, 0.7) ;
+.sec4-container{ text-align: center; align-items: center; background-color: rgb(74, 79, 171, 0.9);
  flex-wrap: wrap; color: white; text-transform: capitalize;
-  padding: 10px;
+  padding: 10px; margin: 0px !important;
 
   font-family: 'Open Sans', sans-serif;
        text-transform: capitalize;
@@ -223,8 +232,14 @@ gap:40px; padding:60px; line-height: 28px; background: rgb(74, 79, 171, 0.5);
     border-radius: 20px; flex-wrap: wrap; background: white; text-transform: capitalize;
     padding: 10px;}
 
+    .sec4-container h1{    line-height: 1.5;
+      text-shadow: 5px 4px 11px rgb(0 0 0 / 26%);
+      letter-spacing: 1px;
+       font-family: 'Poiret One', cursive;
+      letter-spacing: 2px;}
+
   .sec4 img{height: 100px; width: 100px; border-radius: 50%;}
-  .sec4 p{color: black; padding: 10px 40px; font-size: 18px;}
+ 
 
 
     /* blog section */
@@ -279,32 +294,38 @@ gap:40px; padding:60px; line-height: 28px; background: rgb(74, 79, 171, 0.5);
 
 /* section-5 */
 .sec5-container{ text-transform: capitalize; 
-   color:#333; flex-wrap: wrap;
+    flex-wrap: wrap; color: whitesmoke;
     margin: 0px; align-items: center ; text-align: center;
-    padding:80px;  background-color: rgb(74, 79, 171, 0.6)
+    padding:80px; 
  }
- .sec5{ box-shadow: 5px 10px #888888;
-  border-radius: 10px; flex-wrap: wrap; background: white; text-transform: capitalize;
+ .sec5{ box-shadow: 5px 10px black;
+  border-radius: 10px; flex-wrap: wrap; background-color: rgb(74, 79, 171, 0.9);
+   text-transform: capitalize;
   padding: 10px;}
 
-.sec5-grid{display: grid; gap: 20px; flex-wrap: wrap; padding: 2px;  grid-template-columns: repeat(4,1fr);}
+.sec5-grid{display: grid; gap: 20px; flex-wrap: wrap; padding: 2px; 
+   grid-template-columns: repeat(4,1fr);}
 
-.sec5 h1{font-size: 20px; color:rgb(74, 79, 171, 0.9) ;
-padding: 10px 0px;}
-.sec5 svg{color: rgb(74, 79, 171, 0.9); align-items: center;}
-.sec5 p{line-height: 32px; font-size: 18px; font-weight: 600;}
+.sec5 h1{  line-height: 1.5; padding: 10px 0px; 
+  text-shadow: 5px 4px 11px rgb(0 0 0 / 26%);
+  letter-spacing: 1px; font-size: 16px;
+  color: white; font-family: 'Poiret One', cursive;
+  letter-spacing: 2px;}
+
+.sec5 svg{color: orange; align-items: center;}
+.sec5 p{line-height: 32px;  font-weight: 600; font-family: 'Poiret One', cursive;}
 
 /* section-6 */
-.sec6{display: flex; background-color: rgb(74, 79, 171, 0.9) ; margin: 40px; height: 100px;flex-wrap: wrap;
+.sec6{display: flex; background-color: rgba(4, 8, 79, 0.9); margin: 40px; height: 100px;flex-wrap: wrap;
   padding:30px 80px; justify-content: space-between; border-radius: 10px;}
   .sec6 span{color: red;}
-  .sec6 h1{color:white ; font-size: 20px;
+  .sec6 h1{color:white ; font-size: 20px; font-family: 'Poiret One', cursive;
   }
 
   /* section-7 */
 .section7-container{ text-transform: capitalize;  margin: 50px 0px; flex-wrap: wrap;
-  height: fit-content; font-weight: 700; color:rgb(74, 79, 171, 0.9) ;
-    width: 100%; padding:20px;  background-color: white;
+  height: fit-content; font-weight: 700; 
+    width: 100%; padding:20px; background-image: url(img/lo-homepage-background.png);
  }
 
 .sec7-grid{
@@ -314,17 +335,23 @@ grid-template-columns: repeat(2,1fr);
 gap:50px; padding: 10px; line-height: 46px;
 }
 .sec7 img{width: 700px; border-radius: 30px 200px 200px 30px;
-  object-fit: cover; background-position: bottom;
+  padding: 4px;
+  background-color: orange; object-fit: cover; background-position: bottom;
 height: 500px;}
-.sec7 h1{padding: 10px;}
-.sec7 p{color: #333; font-weight: 900; font-size: 16px;
-padding: 10px;}
+.sec7 h1{ line-height: 1.5;
+  text-shadow: 5px 4px 11px rgb(0 0 0 / 26%);
+  letter-spacing: 1px;
+  color: white; font-family: 'Poiret One', cursive;
+  letter-spacing: 2px;}
+.sec7 p{color: rgb(242, 234, 234); font-weight: 900;  
+  font-size: 18px; font-family: 'Poiret One', cursive;
+  padding: 10px;}
 
 
   /* section-8 */
-.sec8{display: flex; flex-wrap: wrap; background-color: rgb(74, 79, 171, 0.9); margin:50px 200px; height: 70px;
+.sec8{display: flex; flex-wrap: wrap; background-color: rgba(4, 8, 79, 0.9); margin:0px 200px; 
   padding:20px 80px; justify-content: space-between; border-radius: 20px;}
-  .sec8 h1{color:whitesmoke ; font-size: 20px; 
+  .sec8 h1{color:whitesmoke ; font-size: 20px;  font-family: 'Poiret One', cursive;
   }
 
 /* section-9 */
@@ -332,7 +359,7 @@ padding: 10px;}
   color:white; flex-wrap: wrap;
      background-color: black;
 }
-.sec9-grid{display: grid; gap: 60px; margin:50px 200px; flex-wrap: wrap;
+.sec9-grid{display: grid; gap: 60px; margin:50px 200px; flex-wrap: wrap; font-family: 'Poiret One', cursive;
 padding: 50px 0px;  grid-template-columns: repeat(4,1fr);}
 .sec9 h1{font-size: 18px; color:rgb(74, 79, 171, 0.9) ;
 padding: 10px 5px;}
