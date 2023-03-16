@@ -29,10 +29,9 @@ width: 100%;color: black; z-index: 4000;
   list-style: none; margin: 0px 10px;  
 }
 .nav-section1 ul li a{ text-transform: capitalize;
-  text-shadow: 5px 4px 11px rgb(0 0 0 / 6%);
-   font-size: 16px;  
-  color: #464545; font-family: 'Open Sans', sans-serif;
-  letter-spacing: 1px;}
+  text-shadow: 5px 4px 11px rgb(0 0 0 / 6%);  
+  color: #464545; font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;  text-transform: capitalize;}
 
 .nav-section1 li a:hover{ color:gray;}
 
@@ -47,15 +46,15 @@ width: 100%;color: black; z-index: 4000;
   padding:10px;margin: 0px 20px; 
 } 
 .box >  i {
-  font-size: 20px;
-  color: gray;
+  font-size: 14px;
+  color: #464545;
 }
 .box > input{
-  flex: 1; font-family: 'sans-serif';
+  flex: 1;   color: #464545; font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;  text-transform: capitalize;
   height: 20px;
   border: none;
   outline: none;
-  font-size: 18px;
   padding-left: 10px;
  
 }
@@ -74,14 +73,16 @@ width: 100%;color: black; z-index: 4000;
           
 }
 
-.banner-content h1{  line-height: 1.2;
+.banner-content h1{  
+  color: white; 
+  line-height: 1.5;
   text-shadow: 5px 4px 11px rgb(0 0 0 / 26%);
   letter-spacing: 1px;
-  color: white; font-family: 'Roboto Condensed', sans-serif;
-  letter-spacing: 2px;font-size: 45px; padding: 15px;    text-transform: capitalize;
+  text-transform: uppercase;
+  letter-spacing: 2px;font-size: 45px;
 }
-.banner-content h6{font-size: 16px;font-weight: lighter;
-   padding:15px; line-height: 23px; font-family: 'Open Sans', sans-serif;
+.banner-content h6{ padding-top:10px ; font-size: 18px;   
+   text-transform: capitalize;line-height: 1.5;
 }
 .banner .banner-content{
     background: rgb(74, 79, 171, 0.4); 
@@ -105,12 +106,14 @@ width: 100%;color: black; z-index: 4000;
 
 .sec1-grid{display: grid; background-color: whitesmoke;  
 grid-template-columns: repeat(3,1fr); flex-wrap: wrap;
-gap: 20px; padding:100px 150px; font-family: 'Roboto Condensed', sans-serif;
+gap: 20px; padding:100px 150px;  font-size: 16px;font-weight: lighter;
+padding:15px; line-height: 23px; font-family: 'Open Sans', sans-serif;
 }
 .sec1 svg{margin: 0px 20px ;}
 .sec1{background-color: white; padding: 20px; 
-  box-shadow: 5px 10px gray;flex-wrap: wrap; line-height: 25px; font-family: 'Open Sans', sans-serif;
-  height: 200px; width: 300px; border-radius: 20px;}
+  box-shadow: 5px 10px gray;flex-wrap: wrap; 
+  font-size: 16px;font-weight: lighter;
+  padding:15px; line-height: 23px; font-family: 'Open Sans', sans-serif;}
 
 .sec1-blue{ background-color: rgb(74, 79, 171, 0.9); padding: 20px;
   box-shadow: 5px 10px #888888; color:white ; font-family: 'Open Sans', sans-serif;
@@ -197,19 +200,20 @@ gap:40px; padding:60px; line-height: 46px;
   text-shadow: 5px 4px 11px rgb(0 0 0 / 26%);
   letter-spacing: 1px;
   color: white; 
-  letter-spacing: 2px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 26px; padding: 5px;    text-transform: capitalize;
 }
 .sec3{width: 100%; height: fit-content;}
 .sec3 img{ border-radius: 200px 100px 30px 200px; 
  padding: 4px; width: 400px; height: 400px;
-  background-color: orange; object-fit: cover;
+  background-color: rgb(74, 79, 171, 0.9); object-fit: cover;
 }
 /* (first value applies to top-left corner,
  second value applies to top-right corner, 
  third value applies to bottom-right corner,
  and fourth value applies to bottom-left corner) */
-.sec3-text p{color: rgb(242, 234, 234); font-weight: 900; font-size: 18px;
-padding: 2px;}
+.sec3-text p{color: rgb(242, 234, 234); font-size: 16px;font-weight: lighter;
+  padding:5px; line-height: 23px; font-family: 'Open Sans', sans-serif;}
 .btn-2 button{padding: 20px 20px; border: none; 
 background-color: transparent; color:white ;}
 .btn-2 button:hover{padding: 20px 20px; border: none; border-radius: 20px;
@@ -239,10 +243,17 @@ gap:40px; padding:60px; line-height: 28px;
     padding: 10px;}
     .sec4-img{height: 200px; width: 200px; 
     }
-    .sec4-container h1{    line-height: 1.5; text-align: center;
+    .sec4-container h1{  text-align: center;     line-height: 1.5;
       text-shadow: 5px 4px 11px rgb(0 0 0 / 26%);
       letter-spacing: 1px;
-      letter-spacing: 2px;}
+      color: #464545; padding-top: 20px;
+      letter-spacing: 2px;font-size: 45px;}
+
+      .sec4 h3{font-family: 'Roboto Condensed', sans-serif; text-align: start;
+        font-size: 26px; padding: 5px;    text-transform: capitalize;}
+
+        .sec4 h6{padding-top:2px ; font-size: 14px; text-align: start;
+        }
 
   .sec4 img{height: 100%; width: 100%; border-radius: 10px;}
  
@@ -326,8 +337,10 @@ gap:40px; padding:60px; line-height: 28px;
 .sec6{display: flex; background-color: rgba(4, 8, 79, 0.9);
    margin: 40px; height: 100px;flex-wrap: wrap;
   padding:30px 80px; justify-content: space-between; border-radius: 10px;}
+
   .sec6 span{color: red;}
-  .sec6 h1{color:white ; font-size: 20px;
+  .sec6 h1{color:white ;font-family: 'Roboto Condensed', sans-serif;
+  font-size: 26px; padding: 15px;    text-transform: capitalize;
   }
 
   /* section-7 */

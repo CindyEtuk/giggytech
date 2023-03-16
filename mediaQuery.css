@@ -15,9 +15,9 @@
       display: none;
       position: absolute;
       left: 0; 
-      padding: 5%;
-      background: #fff;
-      width: 100%;
+      padding: 2%;
+      background:white;
+      width: 25%;
       visibility: visible;
       opacity: 1;
       display: none;
@@ -28,7 +28,7 @@
     /* Style navigation menu links */
     .topnav a {transition: all .9s ease-in-out;
       color:#333;
-      padding: 14px 16px;
+      padding: 4px 2px;
       text-decoration: none; 
       font-size: 14px; text-transform: uppercase;
       display: block; background-color: white;
@@ -237,7 +237,6 @@ padding: 10px; line-height: 26px;
   .sec9 svg{color: rgb(74, 79, 171, 0.9);}
   .sec9 p{line-height: 20px; padding: 5px;}
   .sec9 a{text-decoration: none; padding: 5px; line-height: 20px;}
-
 
 
 
