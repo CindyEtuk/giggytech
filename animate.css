@@ -1,0 +1,67 @@
+
+.sec2-grid {
+    animation-duration: 8s;
+    animation-name: sec2;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes sec2 {
+    from {
+        margin-left: 100%;
+        width: 300%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+  }
+  
+
+  .sec1 {
+    animation-duration: 8s;
+    animation-name: sec1;
+    animation-iteration-count: 3;
+  }
+  
+  
+  @keyframes sec1 {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
+
+
+  .sec4 {
+    animation-duration: 8s;
+    animation-name: sec4;
+    animation-iteration-count: 2;
+    animation-delay: 10s;
+  }
+  
+  @keyframes sec4 {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    75% {
+      font-size: 300%;
+      margin-left: 25%;
+      width: 150%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  

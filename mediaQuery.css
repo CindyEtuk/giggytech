@@ -3,14 +3,15 @@
     /* Style the navigation menu */
     .topnav { 
       overflow: hidden;
-      background-color: #333;
       position: relative;
       display: contents;
       padding: 0px;
     }
-    
-    .logo { margin: 0px 30px; 
-      width:50px; height: 70px; cursor: pointer;}
+  .topnav-container{
+    background-color:black;
+  }
+    .logo { margin: 0px 25px; padding: 10px;
+      width:30%; height: 30%; cursor: pointer;}
     
     .logo img{
       width: 100%; height: 100%;
@@ -23,7 +24,7 @@
       display: none;
       position: absolute;
       left: 0; 
-      background:white;
+      background:black;
       width: 40%;
       visibility: visible;
       opacity: 1;
@@ -36,19 +37,19 @@
     }
     /* Style navigation menu links */
     .topnav a {transition: all .9s ease-in-out;
-      color:#333;
+      color:white;
       padding: 4px 2px;
       text-decoration: none; 
       font-size: 14px; text-transform: uppercase;
-      display: block; background-color: white;
+      display: block; 
       border-bottom: 1px solid whitesmoke;
       list-style: none;
     }
     
     /* Style the hamburger menu */
     .topnav a.icon {
-      background: white;
-      color:#333; border-bottom: none;
+      background: black;
+      color:white; border-bottom: none;
       display: block;
       position: absolute;
       right: 20px;
@@ -58,8 +59,8 @@
     
     /* Add a grey background color on mouse-over */
     .topnav a:hover {
-      background-color: #ddd;
-      color: black !important; 
+      background-color: gold;
+      color: blue !important; 
     }
     
     /* Style the active link (or home/logo) */
@@ -78,12 +79,16 @@
                 height: fit-content; 
                 }
         
-        .banner-content h1{
-          font-size: 16px; padding-top: 100px;
-        }
+        .banner-content h3{
+          line-height: 1.5;
+          text-shadow: 5px 4px 11px rgb(0 0 0 / 26%);
+          letter-spacing: 1px;
+          letter-spacing: 2px;
+          font-size: 15px; padding-top: 50px;
+      }
         .banner .banner-content{flex: 100%;
           width: 100%; object-fit: contain;
-          padding: 10px; margin: 0px;
+          padding: 20px; margin: 0px;
         }
         
         .banner{  flex: 100%;
@@ -105,8 +110,8 @@
 
    /* section-two */
    .section-two{ background-color: wheat;
-       width: 100%; height:fit-content; line-height: 20px;}
-   .sec2-grid{display: none; gap: 0px; padding:10px 50px;  }
+     width: 100%; height:fit-content; line-height: 20px;}
+   .sec2-grid{display: flex; gap: 20px; padding:10px 50px;  }
 .sec2-container{margin: 0px;object-fit: cover;
        height: fit-content;   flex: 100%; flex: 100%;
        width: 100%;
@@ -153,7 +158,7 @@
  .sec4-grid{
   width: 100%; flex:100%;
     display: flex;  
-    padding:10px; gap:0px;
+    padding:10px; gap:10px;
   
   }
   .sec4-img{width: 100%; height: 100%;}
@@ -166,7 +171,7 @@
   /* blog section */
   .blog-container{
     height: 100%;
-    margin: 10px;
+    padding: 20px;
 }
 .blog{
     display: grid;
@@ -184,14 +189,13 @@
     line-height: 1.5;
     text-shadow: 5px 4px 11px rgb(0 0 0 / 26%);
     letter-spacing: 1px;
-    color: #464545;
     letter-spacing: 2px;font-size: 15px;
 }
 .blog-side1 h6{
-    color: grey;padding-top:10px ; font-size: 14px;
+    color: white;padding-top:10px ; font-size: 14px;
 }
 .blog-side1 button{ border-radius: 20px;
-    padding: 10px 10px; color: white; background-color: rgb(74, 79, 171, 0.9);
+    padding: 10px 10px; color: white; background-color:orange;
     border: rgb(74, 79, 171, 0.9); margin-top:50px ; 
 }
 .skippr-nav-element-active{display: none;}

@@ -6,10 +6,10 @@
 
 .topnav{display: none;}
 
-.navigation{ background-color: white; grid-template-columns: repeat(4,1fr);
-  border-bottom: 2px solid whitesmoke; gap: 20px; padding: 10px;
+.navigation{ background-color: black; grid-template-columns: repeat(4,1fr);
+  border-bottom: 1px solid gray; gap: 20px; padding: 10px;
   display: grid; position: fixed;align-items: center;
-width: 100%;color: black; z-index: 4000;
+width: 100%;color: white; z-index: 4000; margin-bottom: 20px;
 
 }
 .navigation svg{color: black;}
@@ -18,8 +18,8 @@ width: 100%;color: black; z-index: 4000;
   
 .logo1 a{color:rgb(140, 140, 230); 
  }
-.logo1{margin:0px  45px;  
-  width:50px; height: 50px; cursor: pointer;}
+.logo1{margin:0px  25px;  
+  width: 100%; height: 100%;  cursor: pointer;}
 .nav-section1 ul{ 
   display: flex;
   font: inherit;
@@ -33,7 +33,7 @@ width: 100%;color: black; z-index: 4000;
 }
 .nav-section1 ul li a{ text-transform: capitalize;
   text-shadow: 5px 4px 11px rgb(0 0 0 / 6%);  
-  color: #464545; font-family: 'Roboto Condensed', sans-serif;
+  color:whitesmoke; font-family: 'Roboto Condensed', sans-serif;
   font-size: 16px;  text-transform: capitalize;}
 
 .nav-section1 li a:hover{ color:gray;}
@@ -76,25 +76,24 @@ width: 100%;color: black; z-index: 4000;
           
 }
 
-.banner-content h1{  
-  color: white; 
-  line-height: 1.5;
+.banner-content h3{
+  line-height: 1.5; text-transform: uppercase;
   text-shadow: 5px 4px 11px rgb(0 0 0 / 26%);
   letter-spacing: 1px;
-  text-transform: uppercase;
+  color: orange; padding-top: 100px;
   letter-spacing: 2px;font-size: 45px;
 }
 .banner-content h6{ padding-top:10px ; font-size: 18px;   
    text-transform: capitalize;line-height: 1.5;
 }
 .banner .banner-content{
-    background: rgb(74, 79, 171, 0.4); 
+    background: rgba(11, 11, 11, 0.4); 
     color: white; 
     width: 100%; 
-    padding: 200px; text-align: start;
+    padding: 100px; text-align: start;
   }
-  .btn button{padding:10px 20px; font-weight: 900; border-radius: 20px; margin:0px 15px;
-    background-color:rgb(74, 79, 171, 0.9); color: white;border: 1px solid rgb(74, 79, 171, 0.5); }
+  .btn button{padding:10px 20px; font-weight: 900; border-radius: 20px; margin:10px 15px;
+    background-color:rgb(74, 79, 171, 0.9); color: white;border: 1px solid rgb(74, 79, 171, 0.9); }
   .btn button:hover{color: rgb(66, 66, 241);background-color: white;}
 
 
@@ -102,14 +101,14 @@ width: 100%;color: black; z-index: 4000;
 
 /* section-one */
 
-.sec1-containere{ text-transform: capitalize; 
+.sec1-container{ text-transform: capitalize; 
  height: fit-content; font-weight: 700; 
-   width: 100%; padding: 0px; 
+   width: 100%; padding: 100px; background-color: black;  
 }
 
-.sec1-grid{display: grid; background-color: whitesmoke;  
+.sec1-grid{display: grid; 
 grid-template-columns: repeat(3,1fr); flex-wrap: wrap;
-gap: 20px; padding:100px 150px;  font-size: 16px;font-weight: lighter;
+gap: 20px; padding: 150px;  font-size: 16px;font-weight: lighter;
 padding:15px; line-height: 23px; font-family: 'Open Sans', sans-serif;
 }
 .sec1 svg{margin: 0px 20px ;}
@@ -118,7 +117,7 @@ padding:15px; line-height: 23px; font-family: 'Open Sans', sans-serif;
   font-size: 16px;font-weight: lighter;
   padding:15px; line-height: 23px; font-family: 'Open Sans', sans-serif;}
 
-.sec1-blue{ background-color: rgb(74, 79, 171, 0.9); padding: 20px;
+.sec1-blue{ background-color: orange; padding: 20px;
   box-shadow: 5px 10px #888888; color:white ; font-family: 'Open Sans', sans-serif;
   height: 200px; width: 300px; border-radius: 20px; line-height: 25px;
 
@@ -133,7 +132,7 @@ padding: 0px 20px;}
 .sec1-blue h3{ padding: 20px;}
 .sec1-blue p{  padding:5px 20px; text-transform: capitalize;}
 .sec1-plain h1{ padding: 20px; color: rgb(74, 79, 171, 0.9);  font-size: 18px;}
-.sec1-plain p{ color: #464545;  padding:5px 20px; text-transform: capitalize;}
+.sec1-plain p{ color: orange;  padding:5px 20px; text-transform: capitalize;}
 
 
   .sec1 h3{color: rgb(74, 79, 171, 0.9); padding: 20px;}
@@ -143,29 +142,29 @@ padding: 0px 20px;}
 
 /* section-two */
 .sec2-container{
-   flex-wrap: wrap;
+   flex-wrap: wrap; 
    width: 100%; background-position: center;
   background-size: cover; background-repeat: no-repeat;
   height:100%;
 }
 
 .sec2-content h1{ font-family: 'Roboto Condensed', sans-serif;
-  font-size: 26px; padding: 15px;    text-transform: capitalize;
+  font-size: 26px; padding: 10px;    text-transform: capitalize;
 }
 .sec2-content p{font-size: 16px;font-weight: lighter;
-  padding:15px; line-height: 23px; font-family: 'Open Sans', sans-serif;
+  padding:10px; line-height: 23px; font-family: 'Open Sans', sans-serif;
 }
 .sec2-container .sec2-content{
-  background: rgb(74, 79, 171, 0.4); 
+  background: rgba(25, 25, 26, 0.4); 
   color: white; 
   width: 100%; 
-  padding: 50px; text-align: start;
+  padding: 100px; text-align: start;
 }
 
 .sec2-grid{ text-align: center; 
   display: grid;  flex-wrap: wrap;
 grid-template-columns: repeat(3,1fr);
-gap: 20px; padding:40px 150px;
+gap: 10px; padding:0px 0px;
 }
 .sec2{background-color: white; padding: 20px; 
   box-shadow: 5px 5px whitesmoke; text-transform: capitalize;
@@ -175,9 +174,9 @@ gap: 20px; padding:40px 150px;
 .section-two{ background-color: wheat;
  width: 100%; height:fit-content; }
 
- .sec2 h1{ padding: 10px; color: rgb(74, 79, 171, 0.9);}
+ .sec2 h1{ padding: 10px; color: orange;}
  .sec2 p{ color: gray; font-size: 16px;font-weight: lighter;
-  padding:15px; line-height: 23px; font-family: 'Open Sans', sans-serif;}
+  padding:10px; line-height: 23px; font-family: 'Open Sans', sans-serif;}
  
  
 /* section-3 */
@@ -185,8 +184,8 @@ gap: 20px; padding:40px 150px;
    margin: 0px !important;
  font-weight: 700; color:white ; background-repeat: no-repeat;
   object-fit: cover;height: fit-content;
-    width: 100%; padding:20px 10px;
-     background-color: rgb(74, 79, 171, 0.9);
+    width: 100%; padding:100px ;
+     background-color:black;
      /* background-image: url(img/lo-homepage-background.png); */
  }
 
@@ -194,10 +193,12 @@ gap: 20px; padding:40px 150px;
 width: 100%; flex-wrap: wrap;
   display: grid;  
 grid-template-columns: repeat(2,1fr);
-gap:40px; padding:60px; line-height: 46px;
+gap:20px; padding:20px; line-height: 46px;
 
 }
+.sec3-text a{ text-decoration: none;
 
+}
 .sec3-text h1{
   line-height: 1.5;
   text-shadow: 5px 4px 11px rgb(0 0 0 / 26%);
@@ -228,23 +229,23 @@ background-color: transparent; color:white ;}
    flex-wrap: wrap;
   display: grid;   
 grid-template-columns: repeat(3,1fr); margin: 0px;
-gap:40px; padding:60px; line-height: 28px;
+gap:20px; padding:20px; line-height: 28px;
 }
   
-.sec4-container{ text-align: start; align-items:
+.sec4-container{ text-align: center; align-items:
    center; 
  flex-wrap: wrap; color: #464545; text-transform: capitalize;
-  padding: 10px; margin: 0px !important;
+  padding: 100px; margin: 0px !important;
 
   font-family: 'Open Sans', sans-serif;
        text-transform: capitalize;
 }
-  .sec4{
+  .sec4{align-items: center;
      color:#464545 ; height: 100%; width: 100%;
     border-radius: 20px; flex-wrap: wrap;
-     background: white; text-transform: capitalize;
+     background: orange; text-transform: capitalize;
     padding: 10px;}
-    .sec4-img{height: 200px; width: 200px; 
+    .sec4-img{height: 100px; width: 100px; 
     }
     .sec4-container h1{  text-align: center;     line-height: 1.5;
       text-shadow: 5px 4px 11px rgb(0 0 0 / 26%);
@@ -265,12 +266,14 @@ gap:40px; padding:60px; line-height: 28px;
     /* blog section */
     .blog-container{
       height: 100%;
-      margin: 100px;
+      background-color: black;
+      padding: 100px;
   }
   .blog{
       display: grid;
       grid-template-columns: repeat(2,1fr);
       grid-gap: 40px;
+      
   }
   .blog-side-2 img{
       width: 100%;
@@ -283,11 +286,11 @@ gap:40px; padding:60px; line-height: 28px;
       line-height: 1.5;
       text-shadow: 5px 4px 11px rgb(0 0 0 / 26%);
       letter-spacing: 1px;
-      color: #464545; 
+      color: orange; 
       letter-spacing: 2px;font-size: 45px;
   }
   .blog-side1 h6{
-      color: grey;padding-top:10px ; font-size: 14px;
+      color: white;padding-top:10px ; font-size: 14px;
   }
   .blog-side1 button{ border-radius: 20px;
       padding: 20px 20px; color: white; background-color: rgb(74, 79, 171, 0.9);
@@ -399,11 +402,21 @@ padding: 10px 5px;}
 .sec9 a{text-decoration: none; padding: 5px; line-height: 30px;}
 .sec9 img{border-radius: 10px;}
 
+/* login page */
+.login-container {color: white;
+  text-transform: capitalize; 
+   flex-wrap: wrap;
+ height: 600px; font-weight: 700; 
+   width: 100%; padding:20px;
+    background-image: url(img/lo-homepage-background.png);
+}
 
-
-
-
-
-
+.login{
+  padding: 120px;
+}
+.login input{
+  padding: 10px;
+  margin: 10px;
+}
 
 
