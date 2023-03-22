@@ -9,7 +9,7 @@ if ( mysqli_connect_errno() ) {
 }
 
 // Now we check if the data from the login form was submitted, isset() will check if the data exists.
-if ( !isset($_POST['username'], $_POST['password']) ) {
+if ( !isset($_POST['name'], $_POST['email'], $_POST['number']) ) {
 	// Could not get the data that should have been sent.
 	exit('Please fill both the username and password fields!');
 }

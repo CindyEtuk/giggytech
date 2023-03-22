@@ -15,8 +15,8 @@
 
 function getConnection() {
 	define('DB_NAME', 'unn_w21058580');
-	define('DB_USER', 'unn_w21058580');
-	define('DB_PASSWORD','homegirl');
+	define('DB_USER', 'root');
+	define('DB_PASSWORD','');
  	define('DB_HOST', 'localhost');
 	$conn = mysqli_connect(DB_HOST, DB_USER,DB_PASSWORD, DB_NAME) 
 	or die("Can not connect to DB");
