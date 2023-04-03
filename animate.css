@@ -1,5 +1,5 @@
 
-.sec2-grid {
+/* .sec2-grid {
     animation-duration: 8s;
     animation-name: sec2;
     animation-iteration-count: infinite;
@@ -16,17 +16,17 @@
         margin-left: 0%;
         width: 100%;
       }
-  }
+  } */
   
 
-  /* .sec1 {
+  /* .sec2-grid {
     animation-duration: 8s;
-    animation-name: sec1;
+    animation-name: sec2;
     animation-iteration-count: 3;
   }
   
   
-  @keyframes sec1 {
+  @keyframes sec2 {
     from {
       margin-left: 100%;
       width: 300%;
@@ -36,18 +36,18 @@
       margin-left: 0%;
       width: 100%;
     }
-  } */
+  }  */
   
 
 
-  /* .sec4 {
+   /* .sec2-grid {
     animation-duration: 8s;
-    animation-name: sec4;
+    animation-name: sec2;
     animation-iteration-count: 2;
     animation-delay: 10s;
   }
   
-  @keyframes sec4 {
+  @keyframes sec2 {
     from {
       margin-left: 100%;
       width: 300%;
@@ -63,5 +63,30 @@
       margin-left: 0%;
       width: 100%;
     }
-  } */
+  }  */
   
+
+  .sec2{
+    transition: transform 2s;
+
+}
+.sec2:hover{
+    transform: rotate(360deg); 
+    /* transform: rotateX(166deg);
+    transform: rotatey(79deg);
+    transform: rotatez(259deg);
+    transform: rotate3d(20,9,18 360deg); */
+    /* background-color: rgb(64, 64, 64); */
+    background-color:rgb(26, 26, 26);
+    color: white;
+    /* transform: rotate(360deg); */
+    
+}
+
+.sec2 p:hover{ color: white; }
+
+.skew{
+    /* transform: skew(20deg); */
+    transform: skewX(20deg);
+    transform: skewy(20deg);
+}

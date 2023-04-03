@@ -246,12 +246,13 @@ background-color: rgb(64, 64, 64);
   .blog{
       display: grid;
       grid-template-columns: repeat(2,1fr);
-      grid-gap: 40px;
+      grid-gap: 20px;
       
   }
   .blog-side-2 img{
       width: 100%;
        height: 100%; 
+       border-radius: 5px;
   }
   .blog-side1{
       width: 100%;
@@ -325,7 +326,7 @@ background-color: rgb(64, 64, 64);
 
   /* section-7 */
   .sec7{
-    background-image: url(img/t5.jpg); border-bottom: 1px solid rgb(64, 64, 64);
+    background-image: url(img/g7.jpg); border-bottom: 1px solid rgb(64, 64, 64);
           height: 100%; width: 100%; background-size: cover; 
            background-position: center; position: relative; }
 .sec7-content h3{
@@ -412,8 +413,9 @@ padding: 10px 5px;}
  height: fit-content; font-weight: 700; 
    width: 100%; padding:20px;
     /* background-image: url(img/lo-homepage-background.png); */
-    /* background-color: rgb(64, 64, 64); */
-    background-color: black;  border-bottom: 1px solid rgb(64, 64, 64);
+    background-color: rgb(64, 64, 64);
+    /* background-color: black;  */
+     border-bottom: 1px solid rgb(64, 64, 64);
 }
 .login{
   padding: 100px;

@@ -13,16 +13,26 @@
 
 
 
+// function getConnection() {
+// 	define('DB_NAME', 'unn_w21058580');
+// 	define('DB_USER', 'root');
+// 	define('DB_PASSWORD','homegirl');
+//  	define('DB_HOST', 'localhost');
+// 	$conn = mysqli_connect(DB_HOST, DB_USER,DB_PASSWORD, DB_NAME) 
+// 	or die("Can not connect to DB");
+// 	return $conn;
+//  }
+
+
 function getConnection() {
 	define('DB_NAME', 'unn_w21058580');
-	define('DB_USER', 'root');
-	define('DB_PASSWORD','');
+	define('DB_USER', 'unn_w21058580');
+	define('DB_PASSWORD','homegirl');
  	define('DB_HOST', 'localhost');
 	$conn = mysqli_connect(DB_HOST, DB_USER,DB_PASSWORD, DB_NAME) 
 	or die("Can not connect to DB");
 	return $conn;
  }
-
 
 function makePageStart() {
 	$pageStartContent = <<<PAGESTART
@@ -30,16 +40,9 @@ function makePageStart() {
 	<html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>giggytech.com</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&family=Shrikhand&family=Tangerine&display=swap" rel="stylesheet">
-		  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrapmincss"rel="stylesheet"integrity="sha384-EVSTQN3azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
-		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		  <link rel="stylesheet" href="css/skippr.css">
-			<link rel="stylesheet" href="main.css">
-			<link rel="stylesheet" href="mediaQuery.css">
-			<link rel="stylesheet" href="animate.css">
+		<title>tour.com</title>
+		<link href="main.css" rel="stylesheet" type="text/css">
+        <link href="style.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 		</head>
 		<body>
@@ -52,82 +55,20 @@ PAGESTART;
 
 function makeNavMenu() {
 	$navMenuContent = <<<NAVMENU
-
-	<!-- navigation-start -->
-    
-	<div class="navigation">
-	  <div class="nothing"></div>
-	  
-	  <div class="logo1">
-		<a href="index.html" >
-		  <img src="img/logo 1-1.png" >
-			</a>
-	  </div> 
-		<div class="nav-section1">
 	
-		<ul>
-		   
-			<li> <a href="index.html"> Home </a></li>
-			<li> <a href="#about">about</a></li> 
-			<li> <a href="#services">services</a></li> 
-			<li> <a href="#portfolio">portfolio</a></li>
-			<li> <a href="#blog">blog</a></li>
-			<li> <a href="#contact" >contact</a></li>
+	<div class="loggedin">
+	<nav class="navtop">
+		<div>
+			<h1>CityTourDubai</h1>
+			<a href="home.php">Home </a>
+			<a href="#">Experiences</a>
+			<a href="#">Travel information </a>
 			<a href="login.html"><i class="fas fa-user-circle"></i>Login</a>
-		  
 			
-  
-		</ul>
-		
+		</div>
+	</nav>
 	</div>
-  
-	<div class="box">
-	  
-	  <input type="text" placeholder="Search here"  name=""  >
-	  <svg width="16" height="16" class="_35lll _3FpBp _24pSQ" 
-	  viewBox="0 0 32 32" version="1.1" aria-hidden="false">
-	  <path d="M22 20c1.2-1.6 2-3.7 2-6 0-5.5-4.5-10-10-10S4 8.5 4 14s4.5
-	   10 10 10c2.3 0 4.3-.7 6-2l6.1 6 1.9-2-6-6zm-8 1.3c-4 0-7.3-3.3-7.3-7.3S10 6.7 14 6.7s7.3 3.3 7.3 7.3-3.3 7.3-7.3 7.3z">
-	  </path></svg>
-	  
-  </div>
-	 </div>
 	
-  <!-- Top Navigation Menu -->
-  <div class="topnav-container">
-	<div class="topnav">
-	  <div class="logo">
-		<a href="index.html" >
-		  <img src="img/logo 1-1.png" >
-			</a>
-	  </div>
-	  <!-- Navigation links (hidden by default) -->
-	  <div id="myLinks" class="nav2">
-		<ul>
-			 
-		  <li> <a href="index.html"> Home </a></li>
-		  <li> <a href="#about">about</a></li> 
-		  <li> <a href="#services">services</a></li> 
-		  <li> <a href="#portfolio">portfolio</a></li>
-		  <li> <a href="#blog">blog</a></li>
-		  <li> <a href="#contact" >contact</a></li>
-		  <a href="login.html"><i class="fas fa-user-circle"></i>Login</a>
-		
-		  
-	
-	  </ul>
-	  </div>
-	  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-		<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-		  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-		</svg>
-	  </a>
-	</div>
-  </div>
-	
-	
-
 NAVMENU;
 	$navMenuContent;
 	return $navMenuContent;
