@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="css/skippr.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="mediaQuery.css">
-    <link rel="stylesheet" href="animate.css">
 </head>
 <body>
 
@@ -139,9 +138,23 @@
 					 <label for="number">Phone Number <span>*</span></label>
 				  <input type="number" name="number" class="form-control" id="number" required>
 					</div> <br>
-					<div class="checkbox">
+
+					
+					<div class="form-group">
+						<label for="sel1">Select Services:</label>
+						<select class="form-control" id="category" name="category"   >
+							<option >Content Creation </option>
+							<option>Social Media Marketing</option>
+							<option>Business website</option>
+							<option>Ecommance website</option>
+							<option>Grow Account</option>
+						</select> <br>
+					  </div>
+
+
+					<!-- <div class="checkbox">
 					  <label><input type="checkbox"> Remember me</label>
-					</div> <br>
+					</div> <br> -->
 					<div class="form-group">
 						<label for="comment">Comment:</label> <br>
 						<textarea class="form-control" rows="5" name="comment" id="comment" required></textarea>

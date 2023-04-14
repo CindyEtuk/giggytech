@@ -278,9 +278,19 @@ padding: 20px; margin: 0px;
 }
 .sec7 button{padding:10px 20px;  }
 
-
-
-
+/* content-page */
+.content{
+  flex: 100%;
+  width: 100%; 
+  margin: 100px;
+}
+.content h2 { color: white;
+  margin: 100px;
+	padding: 100px;
+	font-size: 14px;
+	border-bottom: 1px solid #e0e0e3;
+	color: #4a536e;
+}
 
 
 

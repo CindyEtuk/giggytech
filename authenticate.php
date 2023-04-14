@@ -12,15 +12,15 @@ if ( mysqli_connect_errno() ) {
 	exit('Failed to connect to MySQL: ' . mysqli_connect_error());
 
   // Now we check if the data from the login form was submitted, isset() will check if the data exists.
-if ( !isset($_POST['username'], $_POST['password']) ) {
+if ( !isset($_POST['username']) ) {
 	// Could not get the data that should have been sent.
-	exit('Please fill both the username and password fields!');
+	exit('Please fill both the username and number fields!');
 }
 
 
 }
 // Prepare our SQL, preparing the SQL statement will prevent SQL injection.
-if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?')) {
+if ($stmt = $con->prepare('SELECT id FROM gtech WHERE username = ?')) {
 	// Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use "s"
 	$stmt->bind_param('s', $_POST['username']);
 	$stmt->execute();
@@ -28,11 +28,11 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
 	$stmt->store_result();
 
   if ($stmt->num_rows > 0) {
-    $stmt->bind_result($id, $password);
+    $stmt->bind_result($id);
     $stmt->fetch();
-    // Account exists, now we verify the password.
-    // Note: remember to use password_hash in your registration file to store the hashed passwords.
-    if (password_verify($_POST['password'], $password)) {
+    // Account exists, now we verify the number.
+    // Note: remember to use number_hash in your registration file to store the hashed numbers.
+    
       // Verification success! User has logged-in!
       // Create sessions, so we know the user is logged in, they basically act like cookies but remember the data on the server.
       session_regenerate_id();
@@ -41,14 +41,14 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
       $_SESSION['id'] = $id;
       header('Location: home.php');
     } else {
-      // Incorrect password
-      echo 'Incorrect username and/or password!';
+      // Incorrect number
+      echo 'Incorrect username and/or number!';
     }
   } else {
     // Incorrect username
-    echo 'Incorrect username and/or password!';
+    echo 'Incorrect username and/or number!';
   }
 
 	$stmt->close();
-}
+
 ?>
